@@ -1,6 +1,6 @@
 {
   "name": "use-state-promise",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A custom useState hook with support for Promise",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",

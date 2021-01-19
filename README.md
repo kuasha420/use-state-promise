@@ -12,7 +12,18 @@ An enhanced version of useState hook that returns asynchronous setter. Written i
 import useStatePromise from 'use-state-promise';
 
 export default function App() {
-  const [data, setDataPromise, setData] = useStatePromise('10');
-  return <o>{data}</p>
+  const [data, setDataPromise, setData] = useStatePromise(10);
+  return (
+    <>
+      <p>{data}</p>
+      <button
+        onClick={() =>
+          setDataPromise((curr) => curr + 1).then((state) => console.log('dom updated', state))
+        }
+      >
+        click me!
+      </button>
+    </>
+  );
 }
 ```
