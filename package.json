@@ -1,0 +1,47 @@
+{
+  "name": "use-state-promise",
+  "version": "0.1.0",
+  "description": "A custom useState hook with support for Promise",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "react-native": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist",
+    "package.json",
+    "LICENSE"
+  ],
+  "repository": "https://github.com/kuasha420/use-state-promise",
+  "keywords": [
+    "use-state",
+    "use-async-state",
+    "await-use-state",
+    "use-state-promise",
+    "await-setstate"
+  ],
+  "author": "Arafat Zahan",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "scripts": {
+    "prepare": "rm -rf ./dist/* && tsc && tsc -p ./tsconfig.esm.json"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.14.0",
+    "@typescript-eslint/parser": "4.14.0",
+    "babel-eslint": "10",
+    "eslint": "7.18.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-plugin-flowtype": "5.2.0",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.2.1",
+    "react": "17.0.1",
+    "typescript": "4.1.3"
+  },
+  "dependencies": {}
+}
